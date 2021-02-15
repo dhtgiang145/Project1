@@ -21,3 +21,27 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
+
+.imageslider {
+  width: 500px;
+}
+
+#lightSlider {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#slightSlider li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+#lightslider img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
