@@ -21,9 +21,13 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
+.container {
+  padding: 2%;
+}
 
 .imageslider {
-  width: 500px;
+  width: 100%;
+  height: auto;
 }
 
 #lightSlider {

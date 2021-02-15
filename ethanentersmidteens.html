@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="css/lightslider.css" type="text/css"/>
-    <!-- <link rel="stylesheet" href="masonry.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
+    <link rel="stylesheet" href="masonry.css" type="text/css" />
     <link
       rel="stylesheet"
       href="assets/css/magnific-popup.css"
@@ -360,33 +360,33 @@
         <div class="container">
           <div class="imageslider">
             <!-- Slides -->
-            <ul id="lightSlider"></ul>
-            <li
-              data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
-            >
-              <img
-                src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
-                alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-              />
-            </li>
-            <li
-              data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
-            >
-              <img
-                src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
-                alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-              />
-            </li>
-            <li
-              data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
-            >
-              <img
-                src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
-                alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-              />
-            </li>
+            <ul id="lightSlider">
+              <li
+                data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
+              >
+                <img
+                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
+                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                />
+              </li>
+              <li
+                data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
+              >
+                <img
+                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
+                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                />
+              </li>
+              <li
+                data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
+              >
+                <img
+                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
+                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                />
+              </li>
+            </ul>
             <!-- End Slide -->
-
           </div>
         </div>
       </main>
@@ -416,7 +416,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="slider.js"></script>
     <script src="js/lightslider.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#lightSlider").lightSlider();
+      });
+    </script>
   </body>
 </html>
