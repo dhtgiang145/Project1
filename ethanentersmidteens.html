@@ -19,18 +19,19 @@
     <link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
+    <!-- Bootstrap new version 4.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="masonry.css" type="text/css" />
     <link
       rel="stylesheet"
       href="assets/css/magnific-popup.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
-    <!-- Bootstrap new version 4.5.2 -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <!-- <link rel="stylesheet" href="assets/css/custom.css" type="text/css" /> -->
+
     <!-- Open graphic tags -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -357,7 +358,7 @@
       </section>
 
       <main>
-        <div class="container" id="slideholder">
+        <div class="" id="slideholder">
           <div
             id="midteensCarousel"
             class="carousel slide bg-dark"
@@ -370,6 +371,7 @@
                 data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
               >
                 <img
+                  class="d-block w-100"
                   src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
                   alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
                 />
@@ -379,6 +381,7 @@
                 data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
               >
                 <img
+                  class="d-block w-100"
                   src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
                   alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
                 />
@@ -388,6 +391,7 @@
                 data-thumb="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
               >
                 <img
+                  class="d-block w-100"
                   src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
                   alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
                 />
@@ -420,24 +424,43 @@
             </a>
           </div>
           <!-- thumnail of pictures -->
-          <div class="row">
-            <div class="column">
-               <img class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-            </div>
-            <div class="column">
-               <img class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-            </div>
-            <div class="column">
-               <img class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
+          <div class="clearfix">
+            <div id="thumbslider" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div
+                  data-target="#midteensCarousel"
+                  data-slide-to="0"
+                  class="column"
+                >
+                  <img
+                    class="slideThumbnail"
+                    src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
+                    alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                  />
+                </div>
+                <div
+                  data-target="#midteensCarousel"
+                  data-slide-to="1"
+                  class="column"
+                >
+                  <img
+                    class="slideThumbnail"
+                    src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
+                    alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                  />
+                </div>
+                <div
+                  data-target="#midteensCarousel"
+                  data-slide-to="2"
+                  class="column"
+                >
+                  <img
+                    class="slideThumbnail"
+                    src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
+                    alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -468,11 +491,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/lightslider.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#lightSlider").lightSlider();
-      });
-    </script>
   </body>
 </html>
