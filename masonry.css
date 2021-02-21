@@ -1,4 +1,4 @@
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
   margin: 5% 20%;
@@ -6,13 +6,18 @@
 .grid-item a img {
   animation-timing-function: ease-in;
   animation-duration: 15s;
+} */
+
+#video {
+  margin: 5% auto;
+  padding: auto;
 }
 .despicable {
   width: 80%;
   margin: 0 10%;
 }
 
-hr {
+/* hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -20,16 +25,26 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-}
+} */
 
 #slideholder {
-  position: relative;
-  margin: 5% 15%;
+  margin: 10% 15%;
 }
 
 #midteensCarousel {
-  padding: 1em;
+  position: relative;
+  width: 80%;
+  padding: 0.4em;
 }
+
+.carousel-inner > .carousel-item > img {
+  margin: 0 auto;
+}
+
+/* .carousel-item img {
+  width: 60%;
+  justify-content: center;
+} */
 
 /* .carousel-inner {
   display: flex;
@@ -45,6 +60,9 @@ hr {
   image-orientation: none;
 }
 
+.slideThumbnail {
+  image-orientation: none;
+}
 /* .row:after {
   content: "";
   display: table;
