@@ -49,13 +49,37 @@
     <script type="text/javascript" src="engine1/jquery.js"></script>
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Carousel Flipster -->
+    <link rel="stylesheet" href="jquery.flipster.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
 
     <!-- Document Title
 	============================================= -->
-    <title>**Page Title**</title>
+    <title>Portraits</title>
     <style>
       .side-header #logo img {
         height: auto !important;
+      }
+      ul li {
+        width: 14%;
+        height: auto;
+      }
+      ul li img {
+        border: 7px solid rgb(54, 202, 202);
+      }
+      #bigPicture {
+        width: 100%;
+        height: auto;
+      }
+      ul li .active {
+        border: 10px solid rgb(6, 172, 172);
       }
     </style>
     <meta name="robots" content="noindex, nofollow" />
@@ -372,11 +396,11 @@
 		============================================= -->
       <section id="page-title">
         <div class="container clearfix">
-          <h1>**Page Title**</h1>
+          <h1>Portraits</h1>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">
-              **Current page**
+              Portraits
             </li>
           </ol>
         </div>
@@ -388,13 +412,122 @@
 
       <!--Gallery goes here-->
       <div class="container">
-        <div id="bigPicture" class="d-flex justify-content-center">
-          <img src="images/portraits/480_r-por0013.png" />
+        <div class="row m-3 justify-content-md-center">
+          <div class="col-6 p-1 border">
+            <div id="bigPicture" class="d-flex justify-content-center">
+              <img src="images/portraits/por0018.png" />
+            </div>
+          </div>
         </div>
         <div id="flat" class="border-top-0">
           <ul>
             <li>
+              <img src="images/portraits/por0018.png" />
+              <caption>
+                Self Portraits Fall 2017
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/por0017.jpg" />
+              <caption>
+                Jack Sichterman 12/12/2017
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0016.jpg" />
+              <caption>
+                Attractive Woman Face 2/24/17
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/753_por0015.jpg" />
+              <caption>
+                Self Portrait 3/14/14
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_r-por0001.png" />
+              <caption>
+                Ethan Green
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0002.png" />
+              <caption>
+                Ethan Yellow
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0003.png" />
+              <caption>
+                Ethan Blue
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0004.jpg" />
+              <caption>
+                Ethan Red Abstract
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_r-por0005.png" />
+              <caption>
+                Papa Nat
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0006.jpg" />
+              <caption>
+                My Dad's Abstract Painting
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0007.png" />
+              <caption>
+                Paper Mache Ethan
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/565_por0008.jpg" />
+              <caption>
+                Ethan Oil Pastels/ Watercolo
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/754_por0009.jpg" />
+              <caption>
+                Canyon 5th Grade Class Kids
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/754_por0010.jpg" />
+              <caption>
+                Hanging Out When I'm 25
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/536_por0011.png" />
+              <caption>
+                Formal Portrait of Me
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/754_por0012.jpg" />
+              <caption>
+                Couch Potatoes
+              </caption>
+            </li>
+            <li>
               <img src="images/portraits/480_r-por0013.png" />
+              <caption>
+                Ms. Joy!
+              </caption>
+            </li>
+            <li>
+              <img src="images/portraits/754_por0014.jpg" />
+              <caption>
+                Ethan's Friends
+              </caption>
             </li>
           </ul>
         </div>
