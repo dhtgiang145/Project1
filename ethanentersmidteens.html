@@ -44,11 +44,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <!-- Bootstrap new version 4.5.2 -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <!-- Custom style link -->
     <link rel="stylesheet" href="masonry.css" type="text/css" />
     <!-- Base style link -->
@@ -68,12 +63,39 @@
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Carousel Flipster -->
+    <link rel="stylesheet" href="jquery.flipster.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+
     <!-- Document Title
 	============================================= -->
     <title>Mid-Teens | Doing Art | ethanAart</title>
     <style>
       .side-header #logo img {
         height: auto !important;
+      }
+      #flat ul li {
+        width: 14%;
+        height: auto;
+      }
+      #flat ul li img {
+        image-orientation: none;
+        border: 7px solid rgb(54, 202, 202);
+      }
+      #bigPicture {
+        image-orientation: none;
+        width: 100%;
+        height: auto;
+      }
+      #flat ul li .active {
+        border: 10px solid rgb(6, 172, 172);
       }
     </style>
     <meta name="robots" content="noindex, nofollow" />
@@ -404,117 +426,46 @@
       <!-- Content
 		============================================= -->
       <!--Gallery goes here-->
-      <div class="container clearfix" id="slideholder">
-        <div
-          id="midteensCarousel"
-          class="carousel slide bg-info"
-        >
-          <!-- Slides -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+      <div class="container">
+        <div class="row m-3 justify-content-md-center">
+          <div class="col-6 p-1 border">
+            <div id="bigPicture" class="d-flex justify-content-center">
               <img
-                class=""
+                src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slides -->
+        <div id="flat" class="border-top-0">
+          <ul>
+            <li>
+              <img
                 src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
                 alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
               />
-            </div>
-            <div class="carousel-item">
+            </li>
+            <li>
               <img
-                class=""
                 src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
                 alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
               />
-            </div>
-            <div
-              class="carousel-item"
-            >
+            </li>
+            <li>
               <img
-                class=""
                 src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
                 alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
               />
-            </div>
-            <div
-              class="carousel-item"
-            >
+            </li>
+            <li>
               <img
-                class=""
                 src="images/midteen/180_Sketching_at_the_bluffs_7_.JPG"
                 alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
               />
-            </div>
-          </div>
-          <!-- End Slide -->
-          <a
-            class="carousel-control-prev"
-            href="#midteensCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#midteensCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+            </li>
+          </ul>
         </div>
-        <!-- thumnail of pictures -->
-        <div class="clearfix">
-          <div id="thumbslider" class="carousel slide" data-interval="false">
-            <div class="carousel-inner">
-              <div
-                data-target="#midteensCarousel"
-                data-slide-to="0"
-                class="column"
-              >
-                <img
-                  class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_b.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-              </div>
-              <div
-                data-target="#midteensCarousel"
-                data-slide-to="1"
-                class="column"
-              >
-                <img
-                  class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_a.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-              </div>
-              <div
-                data-target="#midteensCarousel"
-                data-slide-to="2"
-                class="column"
-              >
-                <img
-                  class="slideThumbnail"
-                  src="images/midteen/241_Ethan_at_work_Saturday_May_2nd_2015_c.jpg"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-              </div>
-              <div
-                data-target="#midteensCarousel"
-                data-slide-to="3"
-                class="column"
-              >
-                <img
-                  class="slideThumbnail"
-                  src="images/midteen/180_Sketching_at_the_bluffs_7_.JPG"
-                  alt="http://fineartamerica.com/profiles/ethan-altshuler.html"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- End Slide -->
       </div>
       <!-- Footer
 		============================================= -->
@@ -565,11 +516,42 @@
         padding: 0 20px;
       }
     </style>
-        <!-- Bootstrap jQuery -->
+    <!-- Bootstrap jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Carousel Script -->
+    <script>
+      $(document).ready(function () {
+        var flat = $("#flat").flipster({
+          style: "flat",
+          spacing: -0.2,
+          // start specifies the start index, default is 'center'
+          // start: 0,
+          // set loop to true for it to keep playing, default is false
+          loop: false,
+        });
+        // Can research flipster functions at https://github.com/drien/jquery-flipster/
+        // flat.flipster('play', 2000)
+        // flat.flipster('index')
+
+        // jQuery to remove, clone, and add images from the thumbnail as they are clicked
+        $("#flat img").click(function () {
+          if ($("#flat img").hasClass("active")) {
+            $("#flat img").removeClass("active");
+          }
+          var clone = $(this).clone();
+          if (clone) {
+            $(this).addClass("active");
+          }
+          if ($("#bigPicture").has("img")) {
+            $("#bigPicture img").remove();
+            clone.appendTo("#bigPicture");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
